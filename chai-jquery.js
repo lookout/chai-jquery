@@ -155,7 +155,7 @@
   });
 
   $.each(['visible', 'hidden', 'selected', 'checked', 'enabled', 'disabled'], function (i, attr) {
-    chai.Assertion.addProperty(attr, function () {
+    chai.Assertion.addMethod(attr, function () {
       this.assert(
           flag(this, 'object').is(':' + attr)
         , 'expected #{this} to be ' + attr

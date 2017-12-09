@@ -447,22 +447,22 @@ describe("jQuery assertions", function(){
     });
 
     it("passes when the element is visible", function(){
-      visible.should.be.visible;
+      visible.should.be.visible();
     });
 
     it("passes negated when the element is hidden", function(){
-      hidden.should.not.be.visible;
+      hidden.should.not.be.visible();
     });
 
     it("fails when the element is hidden", function(){
       (function(){
-        hidden.should.be.visible;
+        hidden.should.be.visible();
       }).should.fail("expected " + inspect(hidden) + " to be visible");
     });
 
     it("fails negated when element is visible", function(){
       (function(){
-        visible.should.not.be.visible;
+        visible.should.not.be.visible();
       }).should.fail("expected " + inspect(visible) + " not to be visible");
     });
   });
@@ -480,22 +480,22 @@ describe("jQuery assertions", function(){
     });
 
     it("passes when the element is hidden", function(){
-      hidden.should.be.hidden;
+      hidden.should.be.hidden();
     });
 
     it("passes negated when the element is visible", function(){
-      visible.should.not.be.hidden;
+      visible.should.not.be.hidden();
     });
 
     it("fails when the element is visible", function(){
       (function(){
-        visible.should.be.hidden;
+        visible.should.be.hidden();
       }).should.fail("expected " + inspect(visible) + " to be hidden");
     });
 
     it("fails negated when element is hidden", function(){
       (function(){
-        hidden.should.not.be.hidden;
+        hidden.should.not.be.hidden();
       }).should.fail("expected " + inspect(hidden) + " not to be hidden");
     });
   });
@@ -505,22 +505,22 @@ describe("jQuery assertions", function(){
     var unselected  = $('<option></option>');
 
     it("passes when the element is selected", function(){
-      selected.should.be.selected;
+      selected.should.be.selected();
     });
 
     it("passes negated when the element is not selected", function(){
-      unselected.should.not.be.selected;
+      unselected.should.not.be.selected();
     });
 
     it("fails when the element is not selected", function(){
       (function(){
-        unselected.should.be.selected;
+        unselected.should.be.selected();
       }).should.fail("expected " + inspect(unselected) + " to be selected");
     });
 
     it("fails negated when element is selected", function(){
       (function(){
-        selected.should.not.be.selected;
+        selected.should.not.be.selected();
       }).should.fail("expected " + inspect(selected) + " not to be selected");
     });
   });
@@ -530,22 +530,22 @@ describe("jQuery assertions", function(){
     var unchecked  = $('<input>');
 
     it("passes when the element is checked", function(){
-      checked.should.be.checked;
+      checked.should.be.checked();
     });
 
     it("passes negated when the element is not checked", function(){
-      unchecked.should.not.be.checked;
+      unchecked.should.not.be.checked();
     });
 
     it("fails when the element is not checked", function(){
       (function(){
-        unchecked.should.be.checked;
+        unchecked.should.be.checked();
       }).should.fail("expected " + inspect(unchecked) + " to be checked");
     });
 
     it("fails negated when element is checked", function(){
       (function(){
-        checked.should.not.be.checked;
+        checked.should.not.be.checked();
       }).should.fail("expected " + inspect(checked) + " not to be checked");
     });
   });
@@ -555,22 +555,22 @@ describe("jQuery assertions", function(){
     var enabled  = $('<input>');
 
     it("passes when the element is enabled", function(){
-      enabled.should.be.enabled;
+      enabled.should.be.enabled();
     });
 
     it("passes negated when the element is disabled", function(){
-      disabled.should.not.be.enabled;
+      disabled.should.not.be.enabled();
     });
 
     it("fails when the element is disabled", function(){
       (function(){
-        disabled.should.be.enabled;
+        disabled.should.be.enabled();
       }).should.fail("expected " + inspect(disabled) + " to be enabled");
     });
 
     it("fails negated when element is enabled", function(){
       (function(){
-        enabled.should.not.be.enabled;
+        enabled.should.not.be.enabled();
       }).should.fail("expected " + inspect(enabled) + " not to be enabled");
     });
   });
@@ -580,22 +580,22 @@ describe("jQuery assertions", function(){
     var enabled  = $('<input>');
 
     it("passes when the element is disabled", function(){
-      disabled.should.be.disabled;
+      disabled.should.be.disabled();
     });
 
     it("passes negated when the element is enabled", function(){
-      enabled.should.not.be.disabled;
+      enabled.should.not.be.disabled();
     });
 
     it("fails when the element is enabled", function(){
       (function(){
-        enabled.should.be.disabled;
+        enabled.should.be.disabled();
       }).should.fail("expected " + inspect(enabled) + " to be disabled");
     });
 
     it("fails negated when element is disabled", function(){
       (function(){
-        disabled.should.not.be.disabled;
+        disabled.should.not.be.disabled();
       }).should.fail("expected " + inspect(disabled) + " not to be disabled");
     });
   });
