@@ -103,48 +103,48 @@ expect($('.year')).to.have.value('2012');
 Assert that at least one element of the selection is visible, using [`.is(':visible')`](http://api.jquery.com/:visible/).
 
 ```js
-$('.name').should.be.visible;
-expect($('.year')).to.be.visible;
+$('.name').should.be.visible();
+expect($('.year')).to.be.visible();
 ```
 
 ### `hidden`
 Assert that at least one element of the selection is hidden, using [`.is(':hidden')`](http://api.jquery.com/:hidden/).
 
 ```js
-$('.name').should.be.hidden;
-expect($('.year')).to.be.hidden;
+$('.name').should.be.hidden();
+expect($('.year')).to.be.hidden();
 ```
 
 ### `selected`
 Assert that at least one element of the selection is selected, using [`.is(':selected')`](http://api.jquery.com/:selected/).
 
 ```js
-$('option').should.be.selected;
-expect($('option')).not.to.be.selected;
+$('option').should.be.selected();
+expect($('option')).not.to.be.selected();
 ```
 
 ### `checked`
 Assert that at least one element of the selection is checked, using [`.is(':checked')`](http://api.jquery.com/:checked/).
 
 ```js
-$('.checked').should.be.checked;
-expect($('input')).not.to.be.checked;
+$('.checked').should.be.checked();
+expect($('input')).not.to.be.checked();
 ```
 
 ### `enabled`
 Assert that at least one element of the selection is enabled, using [`.is(':enabled')`](http://api.jquery.com/:enabled/).
 
 ```js
-$('.enabled').should.be.enabled;
-expect($('enabled')).to.be.enabled;
+$('.enabled').should.be.enabled();
+expect($('enabled')).to.be.enabled();
 ```
 
 ### `disabled`
 Assert that at least one element of the selection is disabled, using [`.is(':disabled')`](http://api.jquery.com/:disabled/).
 
 ```js
-$('.disabled').should.be.disabled;
-expect($('input')).not.to.be.disabled;
+$('.disabled').should.be.disabled();
+expect($('input')).not.to.be.disabled();
 ```
 
 ### `empty`
