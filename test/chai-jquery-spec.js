@@ -447,22 +447,22 @@ describe("jQuery assertions", function(){
     });
 
     it("passes when the element is visible", function(){
-      visible.should.be.visible();
+      visible.should.be.visible;
     });
 
     it("passes negated when the element is hidden", function(){
-      hidden.should.not.be.visible();
+      hidden.should.not.be.visible;
     });
 
     it("fails when the element is hidden", function(){
       (function(){
-        hidden.should.be.visible();
+        hidden.should.be.visible;
       }).should.fail("expected " + inspect(hidden) + " to be visible");
     });
 
     it("fails negated when element is visible", function(){
       (function(){
-        visible.should.not.be.visible();
+        visible.should.not.be.visible;
       }).should.fail("expected " + inspect(visible) + " not to be visible");
     });
   });
@@ -480,22 +480,22 @@ describe("jQuery assertions", function(){
     });
 
     it("passes when the element is hidden", function(){
-      hidden.should.be.hidden();
+      hidden.should.be.hidden;
     });
 
     it("passes negated when the element is visible", function(){
-      visible.should.not.be.hidden();
+      visible.should.not.be.hidden;
     });
 
     it("fails when the element is visible", function(){
       (function(){
-        visible.should.be.hidden();
+        visible.should.be.hidden;
       }).should.fail("expected " + inspect(visible) + " to be hidden");
     });
 
     it("fails negated when element is hidden", function(){
       (function(){
-        hidden.should.not.be.hidden();
+        hidden.should.not.be.hidden;
       }).should.fail("expected " + inspect(hidden) + " not to be hidden");
     });
   });
